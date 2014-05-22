@@ -4,6 +4,7 @@ This library provides Hello World APIs. Hello World APIs are very important to j
 ## Usage
 1. Create new HelloWorld instance.
 2. Call some of Hello World APIs you need as below,
+		
 		HelloWorld helloWorld = new HelloWorld();
         String hello = helloWorld.getHello();
         System.out.println(hello);
@@ -21,3 +22,4 @@ Add the dependency as below,
 _Okay...bye..._
 ## Sample Application
 You can see the default sample application in samples directory. [Click here!](http://github.com/)
+
