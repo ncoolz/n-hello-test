@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>default-sample</artifactId>
+	<packaging>jar</packaging>
+	<name>nHelloWorld Default Sample</name>
+	<parent>
+			<groupId>com.navercorp.nhelloworld</groupId>
+			<artifactId>samples</artifactId>
+			<version>0.1-SNAPSHOT</version>
+			<relativePath>../pom.xml</relativePath>
+	</parent>
+	<properties>
+		<java.version>1.6</java.version>
+		<nhelloworld-library.version>0.1-SNAPSHOT</nhelloworld-library.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.navercorp.nhelloworld</groupId>
+			<artifactId>library</artifactId>
+			<version>${nhelloworld-library.version}</version>
+		</dependency>		
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
