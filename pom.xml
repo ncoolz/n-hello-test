@@ -4,7 +4,7 @@
 	<groupId>com.navercorp.nhelloworld</groupId>
 	<artifactId>parent</artifactId>
 	<packaging>pom</packaging>
-	<version>0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>nHelloWorld Parent</name>
 	<description>This library provides hello APIs.</description>
 	<url>https://github.com/ncoolz/n-hello-test</url>
@@ -24,7 +24,7 @@
 		<url>https://github.com/ncoolz/n-hello-test</url>
 		<connection>scm:git:git://github.com/ncoolz/n-hello-test.git</connection>
 		<developerConnection>scm:git:git@github.com:ncoolz/n-hello-test.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>v1.0.0</tag>
 	</scm>
 		<developers>
 			<developer>

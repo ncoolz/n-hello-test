@@ -6,12 +6,12 @@
 	<parent>
 			<groupId>com.navercorp.nhelloworld</groupId>
 			<artifactId>samples</artifactId>
-			<version>0.1-SNAPSHOT</version>
+			<version>1.0.0</version>
 			<relativePath>../pom.xml</relativePath>
 	</parent>
 	<properties>
 		<java.version>1.6</java.version>
-		<nhelloworld-library.version>0.1-SNAPSHOT</nhelloworld-library.version>
+		<nhelloworld-library.version>1.0.0</nhelloworld-library.version>
 	</properties>
 	<dependencies>
 		<dependency>
