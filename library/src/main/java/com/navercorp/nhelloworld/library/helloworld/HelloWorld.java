@@ -34,4 +34,8 @@ public class HelloWorld {
 		String hello_2 = ","; 
 		return hello_2;
 	}
+
+       public String getCodeSmeeeell2() {
+		return "abc" + "cde";
+      }
 }
