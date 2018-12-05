@@ -1,21 +1,2 @@
 language: java
 script: mvn clean compile
-
-env:
-  global:
-   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
-   #   via the "travis encrypt" command using the project repo's public key
-   - secure: "mBAIyxgORYg45WFhMLhGHoXJCI3SuUISru6a72z8OTRHbGEXg3+I7N9NKbCJ4Put4XTtLyYtyI9PKJdyyHBHgNGNmBtho2WiCyxCUYrqvXWBlhs839kjm6pwmRB4BZLq4U+G25uj+0O4DYyCMhl8HlJtfXlYPFu/Pu3DUxXpORWfc6JcK7AccDLO+zYT0JnBjusX/cbhJFi9cjcrQoq+foJEtNEQ6hVkHzcNWH0saWaYEXsEPGjpAAhGaebgIep6VZEM7IeRB6vJgUV7WpVmimZpH3dGzxzXuSc6GS3QzOyfKQN7sfThpB6voRsfEDWQuJAGjJ82yAJn22Nk3oGiu8k27XxaOrG0Swdc0hOB/1Dabi6gHQIFdGlVrJHqjvTzQ8XlCkkp/TFi6yDSI6tdSrCJtdhtvZQmim7wmb1Elm3ti4OXDOBaA6SwIv/ZgFUfBbtsAJeJ4BSliigof0xpEz95l0iTMiuIq+r+jVFoo3hRZa7c5f9PNulEKBjvTqL9omEd3Zb+72x1W4bJQN/JBw7JpD7RfgRVhhAm/GxKc/hNEGz8VMcrhIiaHzTBgtaowPtPnql39ta8Lff4VW8/X+IIWdblBYKpK4Z74/RHmSDefqftyZosumCv9nmV44WPN+hwYpKZJe3FJbeBxbOZUP+gSGnHRC1lK/iwGS01dt4="
-
-before_install:
-  - echo -n | openssl s_client -connect https://scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
-
-addons:
-  coverity_scan:
-    project:
-      name: "ncoolz/n-hello-test"
-      description: "1234"
-    notification_email: wonjun.kim@navercorp.com
-    build_command_prepend: "echo 'hello'" 
-    build_command: "mvn clean compile"
-    branch_pattern: coverity_scan
