@@ -9,6 +9,5 @@ public class HelloWorldSample {
 		System.out.println(helloWorld.getHello() + helloWorld.getComma() + " " + helloWorld.getWorld());
 
 
-
 	}
 }
