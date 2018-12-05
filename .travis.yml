@@ -1,2 +1,4 @@
 language: java
-script: mvn clean compile
+script: mvn clean compile cobertura:cobertura
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
