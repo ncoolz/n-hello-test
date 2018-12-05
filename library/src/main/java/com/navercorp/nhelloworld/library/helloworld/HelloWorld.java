@@ -38,4 +38,8 @@ public class HelloWorld {
        public String getCodeSmeeeell2() {
 		return "abc" + "cde";
       }
+
+       public String abcdcodeSmeeeell2() {
+		return "abc" + "cde";
+      }
 }
