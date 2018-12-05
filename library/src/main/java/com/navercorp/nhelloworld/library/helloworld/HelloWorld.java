@@ -28,4 +28,10 @@ public class HelloWorld {
 	public String getComma() {
 		return ",";
 	}
+
+	public String getCodeSmell() {
+                String hello1 = ",";
+		String hello_2 = ","; 
+		return hello_2;
+	}
 }
